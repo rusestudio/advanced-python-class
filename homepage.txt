@@ -6,3 +6,4 @@
 
 # 메뉴(Header)
 1. 전체적인 메뉴 레이아웃을 구성한다.
+2. 메뉴 버튼 Home, About, Contact로 구성한다.
