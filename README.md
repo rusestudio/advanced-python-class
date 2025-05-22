@@ -1,3 +1,3 @@
-# python-class-project
-2025-1 python class project
+# python-class
+2025-1 python class
 고급파이썬
