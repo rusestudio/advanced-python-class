@@ -12,7 +12,7 @@ from tqdm import tqdm
 argparser = ArgumentParser(description="데이터 정제 예시")
 argparser.add_argument("--input-path", type=str, default="medical_info.json")
 argparser.add_argument("--output-dir", type=str, default="output")
-argparser.add_argument("--num-processes", type=int, default=4)
+argparser.add_argument("--num-processes", type=int, default=8)
 argparser.add_argument("--seed", type=int, default=42)
 
 
