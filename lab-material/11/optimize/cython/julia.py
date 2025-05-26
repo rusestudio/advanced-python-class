@@ -4,6 +4,7 @@ import array
 import time
 from typing import List
 
+import julia_fn2 as julia_fn_cython
 from PIL import Image
 
 # area of complex space to investigate
@@ -57,13 +58,13 @@ def calc_julia(
     average_time = 0
     for _ in range(iters):
         start_time = time.perf_counter()
-        output = calculate_z_serial_pure_python(x_list, y_list, C, max_iterations)
+        output = julia_fn_cython.calculate_z(x_list, y_list, C, max_iterations)
         end_time = time.perf_counter()
         duration = end_time - start_time
         average_time += duration
 
     average_time /= iters
-    print(f"{calculate_z_serial_pure_python.__name__} took {average_time} seconds")
+    print(f"{julia_fn_cython.calculate_z.__name__} took {average_time} seconds")
 
     if draw_image:
         show_grey_scale(output, width, height, max_iterations)
