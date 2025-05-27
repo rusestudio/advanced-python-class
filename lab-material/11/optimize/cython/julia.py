@@ -4,7 +4,7 @@ import array
 import time
 from typing import List
 
-import julia_fn2 as julia_fn_cython
+import julia_fn as julia_fn_cython
 from PIL import Image
 
 # area of complex space to investigate
